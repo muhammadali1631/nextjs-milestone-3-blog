@@ -55,8 +55,8 @@ export default async function Page({
             }}} />
         </div>
         </div>
-        <Comment postId={data._id}/>
         <RelatedBlogs tags={data.tags}/>
+        <Comment postId={data._id}/>
         </div>
     )
   }
