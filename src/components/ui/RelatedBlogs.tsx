@@ -9,7 +9,7 @@ const RelatedBlogs = async({tags}:{tags: string[]}) => {
         
     
   return (
-    <div className=" flex justify-center">
+    <div className=" flex justify-center mb-10">
 
     <div className=" w-[90vw]">
         <h2 className="text-2xl font-semibold border-b-2 my-3 py-2">Related Blogs</h2>
