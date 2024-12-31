@@ -35,7 +35,7 @@ const SearchSection = () => {
         className="px-2 md:px-4 py-1 md:py-2 rounded-md focus:outline-none border w-full lg:w-96"
       />
       {value && (
-        <div className="absolute  left-0 z-30 mt-2 w-screen top-16">
+        <div className="absolute  left-0 z-30 mt-2 w-screen top-14 md:top-16">
           <div className="flex left-0 md:justify-center w-screen">
             <div className="shadow-lg  left-0 border w-screen lg:w-[700px] bg-white dark:bg-black rounded-md">
               

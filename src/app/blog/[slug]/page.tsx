@@ -2,6 +2,8 @@ import { client } from "@/sanity/lib/client"
 import { urlFor } from "@/sanity/lib/image"
 import Image from "next/image"
 import {PortableText} from '@portabletext/react'
+import Comment from "@/components/ui/Comment"
+import RelatedBlogs from "@/components/ui/RelatedBlogs"
 export default async function Page({
     params,
   }: {
@@ -10,6 +12,7 @@ export default async function Page({
     const slug = (await params).slug
     const data = await client.fetch(`*[_type == "blog" && slug.current == $slug][0]`, { slug })
     return (
+      <div>
         <div className="flex justify-center w-full">
         <div className="w-[90vw] md:w-[700px] my-10 space-y-5">
           <h1 className="text-3xl md:text-5xl font-black">{data.title}</h1>
@@ -51,6 +54,9 @@ export default async function Page({
               ),
             }}} />
         </div>
+        </div>
+        <Comment postId={data._id}/>
+        <RelatedBlogs tags={data.tags}/>
         </div>
     )
   }

@@ -6,7 +6,7 @@ import { urlFor } from '@/sanity/lib/image';
 const BlogCard = ({blog}: {blog:BlogsType}) => {
   return (
     <Link href={`/blog/${blog.slug.current}`}>
-    <div className="max-w-[320px] overflow-hidden ">
+    <div className="w-[300px] sm:w-[320px] overflow-hidden ">
         <Image
           src={urlFor(blog.mainImage).url()} 
           alt="Blog Image"
