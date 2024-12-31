@@ -6,11 +6,20 @@ import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
 import Link from 'next/link';
 
+interface SanityImage {
+  _type: 'image';
+  asset: {
+    _type: 'reference';
+    _ref: string;
+  };
+  alt?: string;
+  
+}
 export interface FilteredDataType {
   tags: string[];
   title: string;
   slug: Record<string, string>;
-  mainImage: Record<string, string>;
+  mainImage: SanityImage;
   summary: string;
 }
 
