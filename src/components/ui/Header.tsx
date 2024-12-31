@@ -12,7 +12,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <header className=' p-4'>
-      <div className='container mx-auto flex items-center justify-between'>
+      <div className='container mx-auto flex items-center justify-between space-x-2'>
         <Link href={'/'}>
         <h1 className='text-xl md:text-3xl font-bold'>Bloggo</h1>
         </Link>

@@ -8,7 +8,7 @@ import Link from "next/link";
 const FeaturedBlogCard = ({ blog, index }: { blog: BlogsType, index:number }) => {
   return (
     <div className={`px-2 flex  justify-between items-center ${index === 1 ? 'flex-col-reverse md:flex-row-reverse' : 'flex-col-reverse md:flex-row'}`}>
-      <div className="my-4 space-y-4">
+      <div className="my-4 space-y-4 mx-4">
         <div className="flex items-center justify-between">
             <div className="flex space-x-2">
           {blog.tags.slice(0, 2).map((tag, index) => (
