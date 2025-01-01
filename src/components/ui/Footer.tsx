@@ -43,10 +43,10 @@ function Footer() {
             <h2 className="mb-6 text-sm font-semibold  uppercase">Contact</h2>
             <ul className=" font-medium">
                 <li className="mb-4">
-                    <Link href="#" className="hover:underline">LinkedIn</Link>
+                    <Link href={"https://www.linkedin.com/in/ali-shahzad-42aa24234/"} target="blank" className="hover:underline">LinkedIn</Link>
                 </li>
                 <li className="mb-4">
-                    <Link href="#" className="hover:underline">Github</Link>
+                    <Link href={"https://github.com/muhammadali1631"} target="blank" className="hover:underline">Github</Link>
                 </li>
             </ul>
         </div>
